@@ -1,0 +1,243 @@
+@import url("/Style/all.css");
+
+
+$buttonColor : rgb(13, 88, 85);
+$textColor : rgb(100, 100, 100);
+$checkboxColor:rgb(241, 241, 241);
+
+@mixin labelStyle (){
+    padding: 0.5em 0.8em;
+    background-color: $checkboxColor;
+    border-radius: 50px;
+}
+@mixin getStartedButton(){
+    margin: 0 1em 0 1em;
+        background-color: $buttonColor;
+        padding: 0.6em 0.7em;
+        border-radius: 5px;
+        color: white;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        &:hover{
+            cursor: pointer;
+        }
+}
+
+
+
+.fixed{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+.fixed-2{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    height: 5vh;
+    margin: 0.5em;
+}
+.fixed-3{
+    position: fixed;
+    right: 3em;
+    top: 0;
+    z-index: 1;
+    
+}
+.lines{
+    right: 10%;
+    position: absolute;
+    display: none;
+    
+    
+}
+
+.sticky-nav-bar{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 1em;
+    
+    
+    .logo-image{
+        height: 5vh;
+        margin-left: 1em;
+    }
+    .hamburger{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: 1rem;
+    .contact-sales{
+        
+        white-space: nowrap;
+        color: $textColor;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 0.6em 0.7em;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    .login{
+        white-space: nowrap;
+        color: $textColor;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 0.6em 0.7em;
+        margin-left:2em;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    .get-started-hamburger-button{
+        @include getStartedButton();
+        margin-left:2em;
+        white-space: nowrap;
+    }
+    
+    
+}
+
+
+
+
+}
+
+
+
+.main-text-and-button{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 5em auto 0em auto;
+   
+    
+    .business-partnerships{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 3em;
+        justify-content: center;
+        max-width: 60em;
+    }
+    .business-partnerships > label{
+        @include labelStyle();
+        margin: 0.2em 0.3em;
+        
+    }
+    .main-text{
+        padding: 0.5em 1em;
+        font-size: 3rem;
+        opacity: 0.7;
+        text-align: center;
+    }
+    .main-text-two{
+        padding: 0.5em 1em;
+        font-size: 1.5rem;
+        opacity: 0.7;
+        text-align: center;
+    }
+    .get-started-main-button{
+        @include getStartedButton();
+        margin-top: 2em;
+    }
+
+    .main-image{
+        
+
+    }
+    .hero-photo{
+        height: auto;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    
+    
+}
+
+
+
+
+
+@media only screen and (max-width: 700px){
+    .business-partnerships > label{
+        flex-grow: 1;
+        display: block;
+        width: 7em;
+        white-space: wrap;
+        padding: 0.2em 3em;
+    }
+    .business-partnerships{
+        width: 25em;
+        display: none;
+        
+    }
+    .contact-sales, .login, .get-started-hamburger-button{
+        display: none;
+    }
+    .sticky-nav-bar{
+
+        .lines{
+            display: inline-block;
+            margin-top: 0.8em;
+            width: 2em;
+            i{
+                font-size: 1.3rem;
+            }
+        }
+
+    }
+   
+
+}
+@media only screen and (max-width: 600px){
+    .business-partnerships > label{
+        flex-grow: 1;
+       display: inline;
+    }
+    .business-partnerships{
+        max-width: 25em;
+    }
+    .contact-sales, .login, .get-started-hamburger-button{
+        display: none;
+    }
+    
+
+
+}
+@media only screen and (max-width: 400px){
+    .business-partnerships > label{
+        
+        flex-wrap: wrap;
+        width: 80%;
+        
+    }
+    .business-partnerships{
+      
+        flex-direction: column;
+        
+    }
+    .contact-sales, .login, .get-started-hamburger-button{
+        display: none;
+    }
+    h1{
+        line-height: 0.8em;
+    }
+    h3{
+        line-height: 1em;
+    }
+
+
+}
+
+
+
+
+

@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+@import "./hero";
+@import "./features";
+@import "./pricing";
+/*----------------------------------FORM-----------------------------------------------*/
+.login-form{
+    display: flex;
+    justify-content: center;
+}
+.form{
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 10em;
+    max-width: 15em;
+    z-index: 1;
+    background: rgb(243, 243, 243);
+    box-shadow: 0px 0px 50px black;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 1em 0.5em 0.5em 1em;
+    
+    display: none;
+    
+    
+    .name{
+        height: 1.8em;
+        margin: 0 0 2em -0.5em;
+        
+    }
+    .buttons{
+        margin: 0.2em;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        
+        bottom: 0;
+        .cancel{
+            position: absolute;
+            left: 0;
+            margin: 1em;
+            padding: 0.5em 0.8em;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            background-color: red;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.479);
+        }
+        .submit{
+            position: absolute;
+            right: 0;
+            margin: 1em;
+            padding: 0.5em 0.8em;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            background-color: rgb(0, 141, 19);
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 141, 19, 0.479);
+        }
+    }
+}
+

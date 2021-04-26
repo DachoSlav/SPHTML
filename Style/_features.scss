@@ -1,0 +1,862 @@
+@import url("/Style/all.css");
+/*--------------------------------------------------------------------------------------------*/
+@mixin scaleFunction(){
+    transform: scale(1.01);
+    transition: 0.1s;
+    z-index: 9999;
+}
+.feature-first{
+    background-color: rgba(151, 140, 89, 0.2);
+    height: 30em;
+    width: auto;
+    margin-top: 2em;
+    padding: 3em 0 4em 0;
+    display: flex;
+    flex-direction: column;
+    margin: 5em 1em 1em 1em;
+    column-gap: 1em;
+    
+
+    .find{
+        margin: 2em 0em 1em 3em;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .stay{
+        margin: 0em 0em 2em 4.6em;
+        max-width: 28em;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+    }
+    .first-photo{   
+        height: 2em;
+        width: auto; 
+    }
+    .feature-1{
+        height: 28em;
+        width: auto;
+        float: right;
+        margin-top: -5.5em;
+    }
+    }
+    
+    
+    
+    .stay-organised{
+        margin: 0.2em 0 0.6em 0.2em;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+        .grid-container{
+            
+        grid-gap: 0.5em;
+        display: grid;
+        height: 15em;
+        max-width: 60em;
+        margin: 0 1em 0 3em ;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        
+        "resources world-connect messaging"
+        "resources world-connect voice-and-video-calls";
+        .resources{
+            position: relative;
+            padding: 1em;
+            grid-area: resources;
+            &:hover{
+                cursor: pointer;
+                @include scaleFunction();
+            }
+            .resources-photo{
+                height: 4em;
+            }
+            .rsrs{
+                margin: 1em 0 0.6em 0.2em;
+                font-weight: 700;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .arrow-image{
+                height: 1em;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                padding: 1em;
+            }
+            
+        }
+        .world-connect{
+            position: relative;
+            grid-area: world-connect;
+            padding: 1em;
+            &:hover{
+                cursor: pointer;
+                @include scaleFunction();
+            }
+            .world-connect-photo{
+                height: 4em;
+                margin-top: 0em;
+            }
+            .wrldcnnct{
+                margin: 0.8em 0 0.6em 0em;
+                font-weight: 700;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            .collaborate{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .arrow-image{
+                height: 1em;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                padding: 1em;
+            }
+        }
+        .messaging{
+            position: relative;
+            grid-area: messaging;
+            padding: 1em;
+            &:hover{
+                cursor: pointer;
+                @include scaleFunction();
+            }
+            .messaging-photo{
+                height: 4em;
+                
+                margin-top: 1em;
+            }
+            .msgn{
+                margin: 1em 0 0em 0em;
+                font-weight: 700;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .arrow-image{
+                height: 1em;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                padding: 1em;
+            }
+        }
+        .voice-and-video-calls{
+            position: relative;
+            grid-area: voice-and-video-calls;
+            padding: 1em;
+            &:hover{
+                cursor: pointer;
+                @include scaleFunction();
+            }
+            .vvc-photo{
+                height: 4em;
+                margin-top: 1em;
+            }
+            .vvc{
+                margin: 0.6em 0 0.6em 0em;
+                font-weight: 700;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .arrow-image{
+                height: 1em;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                padding: 1em;
+            }
+
+        }
+
+    }
+    .grid-container > div{
+        background-color:whitesmoke;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.301);
+        border-radius: 2px;
+        
+    }
+
+
+
+
+/*--------------------------------------------------------------------------------------------*/
+.feature-second{
+    background-color: rgba(151, 140, 89, 0.2);
+    height: 30em;
+    width: auto;
+    padding: 6em 0em 10em 0em;
+    display: flex;
+    flex-direction: column;
+    margin: -1em 1em 1em 1em;
+    column-gap: 1em;
+    position: relative;
+
+    .what{
+        margin: 2em 0em 1em 50%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .spend{
+        margin: 0em 0em 2em 50%;
+        max-width: 28em;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .second-photo{   
+        height: 2em;
+        width: auto; 
+    }
+    .feature-2{
+
+        height: 20em;
+        padding:6em 0 0 3em;
+        margin: 10em 0em 0em 10em;
+        width: auto;
+        float: left;
+        margin-top: -5.5em;
+    }
+    .grid-container-two{
+        grid-gap: 0.5em;
+        display: grid;
+        height: 15em;
+        max-width: 60em;
+        position: absolute;
+        right: 6.5em;
+        top:43%;
+        margin: 1em;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        
+        
+        "amazing-stuff build-life search"
+        "amazing-stuff build-life file-sharing";
+        .amazing-stuff{
+            position: relative;
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            grid-area: amazing-stuff;
+            &:hover{
+                cursor: pointer;
+                @include scaleFunction();
+            }
+            .amazing-stuff-photo{
+                width:4em;
+                height: auto;
+                margin-top: 0.5em;
+            }
+            .amzstuff{
+                margin: 0.2em 0 0.6em 0.2em;
+                font-weight: 700;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .streamline{
+                margin-left: 0.2em;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .arrow-photo{
+                height: 1em;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                padding: 1em;
+            }
+
+            
+        }
+        .build-life{
+            grid-area: build-life;
+            position: relative;
+            padding: 1em;
+            &:hover{
+                cursor: pointer;
+                @include scaleFunction();
+            }
+            .build-life-photo{
+                width:2.7em;
+                height: auto;
+                margin-top: 0.5em;
+            }
+            .bldlife{
+                margin: 0.2em 0 0.6em 0.2em;
+                font-weight: 700;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .automate{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .arrow-photo{
+                height: 1em;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                padding: 1em;
+            }
+        }
+        .search{
+            grid-area: search;
+            padding: 1em;
+            position: relative;
+            &:hover{
+                cursor: pointer;
+                @include scaleFunction();
+            }
+            .search-photo{
+                width:3.7em;
+                height: auto;
+                margin-top: 0.5em;
+            }
+            .srch{
+                margin: 0em 0 0.6em 0.2em;
+                font-weight: 700;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .arrow-photo{
+                height: 1em;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                padding: 1em;
+            }
+        }
+        .file-sharing{
+            grid-area: file-sharing;
+            padding: 1em;
+            position: relative;
+            &:hover{
+                cursor: pointer;
+
+            }
+            .file-sharing-photo{
+                width:4em;
+                height: auto;
+                margin-top: 0.5em;
+            }
+            .flshr{
+                margin: 0em 0 0.6em 0.2em;
+                font-weight: 700;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .arrow-photo{
+                height: 1em;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                padding: 1em;
+            }
+        }
+
+    }
+    .grid-container-two > div{
+        background-color:whitesmoke;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.301);
+        border-radius: 2px;
+
+    }
+
+
+
+}
+/*----------------------------------------------------------------------------------------------*/
+.feature-third{
+    background-color: rgba(151, 140, 89, 0.2);
+    height: 30em;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin: -1em 1em 1em 1em;
+    column-gap: 1em;
+    padding: 0 0 3em 0;
+    .for{
+        margin: 2em 0em 1em 3em;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .hellow{
+        margin: 0em 0em 2em 4.6em;
+        max-width: 28em;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .third-photo{   
+        height: 2em;
+        width: auto; 
+    }
+    .feature-2{
+        height: 20em;
+        width: auto;
+        float: right;
+        margin-top: 3em;
+    }
+    .grid-container-third{
+        grid-gap: 0.5em;
+        display: grid;
+        height: 15em;
+        max-width: 60em;
+        margin: 0 1em 0 3em;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        
+        "security private-key-management happinness-for-everyone"
+        "security private-key-management voice-and-video-calls" ;
+        .security{
+            padding: 1em;
+            grid-area: security;
+            cursor: pointer;
+            position: relative;
+            &:hover{
+                @include scaleFunction();
+            }
+            .security-photo{
+                width: 3em;
+                height: auto;
+            }
+            .scrt{
+                margin: 0em 0 0.6em 0.2em;
+                font-weight: 700;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .protecting{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin-left: 0.2em;
+            }
+            .arrow-photo{
+                height: 1em;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                padding: 1em;
+            }
+        }
+        .private-key-management{
+            padding: 1em;
+            grid-area: private-key-management;
+            cursor: pointer;
+            position: relative;
+            &:hover{
+                @include scaleFunction();
+            }
+            .private-key-management-photo{
+                width: 3.5em;
+                height: auto;
+            }
+            .prvt{
+                margin: 0.5em 0 0.6em 0.2em;
+                font-weight: 700;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .complete{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin-left: 0.2em;
+            }
+            .arrow-photo{
+                height: 1em;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                padding: 1em;
+            }
+        }
+        .happinness-for-everyone{
+            grid-area: happinness-for-everyone;
+            padding: 1em;
+            cursor: pointer;
+            position: relative;
+            height: 65%;
+            &:hover{
+                @include scaleFunction();
+            }
+            .happiness-for-everyone-photo{
+                width: 4em;
+                height: auto;
+            }
+            .hpnfevr{
+                margin: 1em 0 0.6em 0.2em;
+                font-weight: 700;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .arrow-photo{
+                height: 1em;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                padding: 1em;
+            }
+        }
+       
+
+    }
+    .grid-container-third > div{
+        background-color:whitesmoke;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.301);
+        border-radius: 2px;
+
+    }
+}
+/*------------------------------MEDIA---------------------------------------------------------*/
+@media only screen and (max-width: 1025px){
+    
+.feature-first{  
+    padding: 0;
+    height: 60em;
+    
+    padding-top: 5em;
+    
+    .find{
+        margin: 0.6em;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .stay{
+        margin: 1em;
+        max-width: 19em;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.5em;
+    }
+    .feature-1{
+        height: 18em;
+        width: auto;
+        float: right;
+        margin-top: -6em;
+    }
+    .grid-container{
+        margin: 1em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        
+        "resources resources"
+        "world-connect world-connect"
+        "messaging voice-and-video-calls";
+
+        .resources{
+            grid-area: resources;
+        }
+        .world-connect{
+            grid-area: world-connect;
+        }
+        .messaging{
+            grid-area: messaging;
+        }
+        .voice-and-video-calls{
+            grid-area: voice-and-video-calls;
+        }
+    }
+}
+.feature-second{  
+    
+    height: 60em;
+    width: auto;
+    padding: 0;
+    margin: -1em 1em 1em 1em;
+    padding-top: 5em;
+    
+    .what{
+        margin: 0.6em;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .spend{
+        margin: 1em;
+        max-width: 19em;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.5em;
+    }
+    .feature-2{
+        position: absolute;
+        height: 18em;
+        margin-top: -8em;
+        right: 0;
+        
+        
+    }
+    
+    .grid-container-two{
+        max-width: 100%;
+        right: 0;
+        left: 0;
+        top:30%;
+        margin: 1em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        
+        "amazing-stuff amazing-stuff"
+        "build-life build-life"
+        "search file-sharing";
+        .what{
+            max-width: 10em;
+        }
+        .amazing-stuff{
+            grid-area: amazing-stuff;
+        }
+        .build-life{
+            grid-area: build-life;
+        }
+        .search{
+            grid-area: search;
+        }
+        .file-sharing{
+            grid-area: file-sharing;
+        }
+    }
+}
+.feature-third{  
+    position: relative;
+    height: 60em;
+    width: auto;
+    padding: 0em 1em;
+    margin: -1em 1em 1em 1em;
+    
+    
+    .for{
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .hellow{
+        margin: 1em 0 5em 0;
+        max-width: 20em;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.5em;
+    }
+    .feature-2{
+        height: 18em;
+        margin-top: -4em;
+        float: right;
+        
+    }
+    
+    .grid-container-third{
+        grid-gap: 0.5em;
+        display: grid;
+        height: 15em;
+        max-width: 70em;
+        margin: 0;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        
+        "security"
+        "private-key-management"
+        "happinness-for-everyone";
+        .security{
+            padding: 1em;
+            grid-area: security;
+            cursor: pointer;
+            position: relative;
+            .security-photo{
+                max-width: 3em;
+                height: auto;
+            }
+            .scrt{
+                margin: 0em 0 0.6em 0.2em;
+                font-weight: 700;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .protecting{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin-left: 0.2em;
+            }
+
+
+
+            .arrow-photo{
+                height: 1em;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                padding: 1em;
+            }
+        }
+        .private-key-management{
+            padding: 1em;
+            grid-area: private-key-management;
+            cursor: pointer;
+            position: relative;
+            .private-key-management-photo{
+                width: 3.5em;
+                height: auto;
+            }
+            .prvt{
+                margin: 0.5em 0 0.6em 0.2em;
+                font-weight: 700;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .complete{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin-left: 0.2em;
+            }
+            .arrow-photo{
+                height: 1em;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                padding: 1em;
+            }
+        }
+        .happinness-for-everyone{
+            grid-area: happinness-for-everyone;
+            padding: 1em;
+            cursor: pointer;
+            position: relative;
+            height: 65%;
+
+            .happiness-for-everyone-photo{
+                width: 4em;
+                height: auto;
+            }
+            .hpnfevr{
+                margin: 1em 0 0.6em 0.2em;
+                font-weight: 700;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .arrow-photo{
+                height: 1em;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                padding: 1em;
+            }
+        }
+       
+
+    }
+}
+
+
+    
+
+}
+@media only screen and (max-width: 750px){
+    .feature-second{
+        
+        .feature-2{
+            height: 15em;
+            margin: -3em 0 0 0;
+            padding-right: 0em;
+        }
+    }
+    .feature-third{
+        .feature-2{
+            height: 15em;
+            margin: -1em 0 0 0;;
+
+        }
+    }
+}
+@media only screen and (max-width: 600px){
+    .feature-first{
+        position: relative;
+        padding-top: 15em;
+        .stay{
+            
+            max-width: 35em;
+            margin-right: 1em;
+        }
+        .first-photo{
+            display: flex;
+            justify-content: center;
+        }
+        .feature-1{
+            position: absolute;
+            top: 4em;
+        }
+        .grid-container{
+            margin: 1em;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr;
+            
+            grid-template-areas: 
+            
+            "resources"
+            "world-connect"
+            "messaging"
+            "voice-and-video-calls";
+    
+            .resources{
+                grid-area: resources;
+            }
+            .world-connect{
+                grid-area: world-connect;
+            }
+            .messaging{
+                grid-area: messaging;
+            }
+            .voice-and-video-calls{
+                grid-area: voice-and-video-calls;
+            }
+        }
+
+    }
+
+    .feature-second{  
+        position: relative;
+        padding-top: 15em;
+        
+        .what{
+            margin: 0.6em;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .spend{
+            margin: 1em;
+            max-width: 19em;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.5em;
+        }
+        .second-photo{
+            display: flex;
+            justify-content: center;
+            
+        }
+        .feature-2{
+            position: absolute;
+            top: 0;
+            z-index: -1;
+            padding: 0;
+            margin: 0;
+            
+            
+        }
+        
+        .grid-container-two{
+            max-width: 100%;
+            right: 0;
+            left: 0;
+            top:30%;
+            margin: 1em;
+            grid-template-columns: 1fr ;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+            
+            "amazing-stuff"
+            "build-life"
+            "search"
+            "file-sharing";
+            .what{
+                max-width: 10em;
+            }
+            .amazing-stuff{
+                grid-area: amazing-stuff;
+            }
+            .build-life{
+                grid-area: build-life;
+            }
+            .search{
+                grid-area: search;
+            }
+            .file-sharing{
+                grid-area: file-sharing;
+            }
+        }
+    }
+
+    .feature-third{
+        position: relative;
+        padding-top: 10em;
+        .hellow{
+            max-width: 35em;
+        }
+        .third-photo{
+            display: flex;
+            justify-content: center;
+        }
+        .feature-2{
+            position: absolute;
+            top: -3em;
+        }
+    }
+    
+}
+

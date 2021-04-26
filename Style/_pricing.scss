@@ -1,0 +1,287 @@
+.pricing-div{
+    padding: 1em 0em 5em 0em;
+}
+.h1-quote{
+    opacity: 0.8;
+}
+.flexed-pricing, .h1-quote{
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    
+    
+    .basic ,.premium,.business{
+        max-width: 18em;
+        height: auto;
+        line-height: 2em;
+    }
+    
+
+
+    .basic{
+        position: relative;
+        border: 2px solid rgb(80, 80, 80);
+        padding: 2.5em 1em;
+        border-radius: 10px;
+        margin: 1em;
+        flex: 1;
+        height: 70%;
+        
+        ul{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            list-style-type: none;
+            font-weight: 500;
+        }
+        ul > li::before{
+            content: '✓ ';
+            color:rgb(80, 80, 80);
+            font-weight: 900;
+        }
+       
+        
+        .price1-photo{
+            height: 1.5em;
+            display: inline;
+        }
+        .basic-pricing{
+            display: inline;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.5rem;
+            color: rgb(80, 80, 80);
+            font-weight: 600;
+        }
+        .free-price{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+        }
+        .make-great-friends{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 0.8rem;
+            opacity: 0.9;
+            padding: 0.5em 0;
+        }
+        .flexed-button{
+            display: flex;
+            justify-content: center;
+            
+        }
+        .free-button{
+            position: relative;
+            bottom: 0;
+            width: 90%;
+            margin:1em 0;
+            padding: 0.5em 3em;
+            white-space: nowrap;
+            &:hover{
+                cursor: pointer;
+            }
+            border: 2px solid rgb(80, 80, 80);
+            border-radius: 2px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: rgb(80, 80, 80);
+        }
+
+    }
+
+/*-------------------------------PREMIUM--------------------------------------------------------*/
+    .premium{
+        position: relative;
+        border: 2px solid rgb(165, 0, 0);
+        padding: 2.5em 1em 5em 1em;
+        border-radius: 10px;
+        margin: 1em;
+        flex: 1;
+        height: 70%;
+        
+        ul{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            list-style-type: none;
+            font-weight: 500;
+        }
+        li:first-child::before{
+            content: '\1F810';
+            font-weight: 900;  
+        }
+        ul > li::before{
+            content: '✓ ';
+            color:rgb(0, 158, 21);
+            font-weight: 900;
+            
+        }
+        .the-price{
+            margin-top: 0.1em;
+        }
+        
+        .price2-photo{
+            height: 1.5em;
+            display: inline;
+        }
+
+        .the-price-div{
+            display: flex;
+            flex-direction: row;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 2.5em;
+            font-weight: 600;
+            margin: 0.5em 0 0 -0.3em;
+        }
+        .month{
+            font-size: .3em;
+            margin-top: 1.1em;
+        }
+        #valute-price-1::before{
+            font-size: 2.3rem;
+            margin-left: 0.4em;
+            
+        }    
+        .premium-pricing{
+            display: inline;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.5rem;
+            color: rgb(165, 0, 0);
+            font-weight: 600;
+            
+        }
+        .premium-price{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+        }
+        .be-more-popular{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 0.8rem;
+            opacity: 0.9;
+            padding: 0.5em 0;
+        }
+        .flexed-button{
+            display: flex;
+            justify-content: center;
+            
+        }
+        .try-for-free-green-button{
+            position: absolute;
+            bottom: 0;
+            width: 90%;
+            margin:1em 0;
+            padding: 0.5em 3em;
+            white-space: nowrap;
+            &:hover{
+                cursor: pointer;
+            }
+            border: 2px solid rgb(0, 158, 21);
+            border-radius: 2px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: rgb(255, 255, 255);
+            background-color:rgb(0, 158, 21);
+        }
+    }
+/*------------------------------------BUSINESS------------------------------------------------*/
+    .business{
+        position: relative;
+        border: 2px solid rgb(10, 10, 10);
+        padding: 2.5em 1em 5em 1em;
+        border-radius: 10px;
+        margin: 1em;
+        flex: 1;
+        height: auto;
+        ul{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            list-style-type: none;
+            font-weight: 500;
+        }
+        li:first-child::before{
+            content: '\1F810 ';
+            font-weight: 900;  
+        }
+        ul > li::before{
+            content: '✓ ';
+            color:rgb(10, 10, 10);
+            font-weight: 900;
+            
+        }
+        #valute-price-2::before{
+            font-size: 2.3rem;
+            margin-left: 0.4em;
+            
+        } 
+        
+        .price3-photo{
+            height: 1.5em;
+            display: inline;
+        }
+
+        .the-price-div{
+            display: flex;
+            flex-direction: row;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 2.5em;
+            font-weight: 600;
+            margin: 0.5em 0 0 -0.3em;
+            white-space: nowrap;
+        }
+        .month{
+            font-size: .3em;
+            margin-top: 1.1em;
+        }
+        .the-price{
+            margin-top: 0.1em;
+        }
+
+        .business-pricing{
+            display: inline;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.5rem;
+            color: rgb(80, 80, 80);
+            font-weight: 600;
+            
+        }
+        .business-price{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+        }
+        .collaborate{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 0.8rem;
+            opacity: 0.9;
+            padding: 0.5em 0;
+        }
+        .flexed-button{
+            display: flex;
+            justify-content: center;
+            
+        }
+        .try-for-free-gray-button{
+            position: absolute;
+            bottom: 0;
+            width: 90%;
+            margin:1em 0;
+            padding: 0.5em 3em;
+            white-space: nowrap;
+            &:hover{
+                cursor: pointer;
+            }
+            border: 2px solid rgb(10, 10, 10);
+            border-radius: 2px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: rgb(255, 255, 255);
+            background-color:rgb(10, 10, 10);
+        }
+    }
+
+}
+@media only screen and (max-width: 650px){
+
+    .flexed-pricing{
+        flex-direction: column;   
+        align-items: center;
+    }
+}
