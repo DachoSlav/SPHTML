@@ -1,0 +1,21 @@
+{
+  "name": "StaticHTMLPage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node package.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DachoSlav/SPHTML.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DachoSlav/SPHTML/issues"
+  },
+  "homepage": "https://github.com/DachoSlav/SPHTML#readme"
+}
