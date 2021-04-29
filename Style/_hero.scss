@@ -13,16 +13,21 @@ $checkboxColor:rgb(241, 241, 241);
 @mixin getStartedButton(){
     margin: 0 1em 0 1em;
         background-color: $buttonColor;
-        padding: 0.6em 0.7em;
+        padding: 0.6em 1em;
         border-radius: 5px;
+        border: none;
         color: white;
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         &:hover{
             cursor: pointer;
         }
 }
-
-
+.addClass{
+    .project-management{
+        background-color: rgb(158, 175, 255);
+        transform: scale(10);
+    }
+}
 
 .fixed{
     position: fixed;
@@ -50,16 +55,13 @@ $checkboxColor:rgb(241, 241, 241);
     position: absolute;
     display: none;
     
-    
 }
-
 .sticky-nav-bar{
     
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.5em 1em;
-    
     
     .logo-image{
         height: 5vh;
@@ -97,24 +99,16 @@ $checkboxColor:rgb(241, 241, 241);
         margin-left:2em;
         white-space: nowrap;
     }
-    
-    
+     
 }
 
-
-
-
 }
-
-
-
 .main-text-and-button{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     margin: 5em auto 0em auto;
-   
     
     .business-partnerships{
         display: flex;
@@ -123,6 +117,11 @@ $checkboxColor:rgb(241, 241, 241);
         margin-top: 3em;
         justify-content: center;
         max-width: 60em;
+        .project-management{
+            .project-management-checkbox{
+                color: blue;
+            }
+        }
     }
     .business-partnerships > label{
         @include labelStyle();
@@ -143,12 +142,7 @@ $checkboxColor:rgb(241, 241, 241);
     }
     .get-started-main-button{
         @include getStartedButton();
-        margin-top: 2em;
-    }
-
-    .main-image{
-        
-
+        margin: 3em 0;
     }
     .hero-photo{
         height: auto;
@@ -157,25 +151,53 @@ $checkboxColor:rgb(241, 241, 241);
         background-repeat: no-repeat;
         background-size: cover;
     }
-    
-    
-    
 }
-
-
-
-
-
 @media only screen and (max-width: 700px){
-    .business-partnerships > label{
-        flex-grow: 1;
-        display: block;
-        width: 7em;
-        white-space: wrap;
-        padding: 0.2em 3em;
+    .business-partnerships{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        
+        "pm marketing crm"
+        "creative creative creative soft soft soft"
+        "task task constr constr hr hr"
+        "it it it solutions solutions solutions"
+        ;
+
+        .project-management{
+            grid-area: pm;
+        }
+        .marketing{
+            grid-area: marketing;
+        }
+        .crm-and-sales{
+            grid-area: crm;
+        }
+        .creative-and-design{
+            grid-area: creative;
+        }
+        .software-development{
+            grid-area: soft;
+        }
+        .task-management{
+            grid-area: task;
+        }
+        .construction{
+            grid-area: constr;
+        }
+        .hr-and-recruitment{
+            grid-area: hr;
+        }
+        .it{
+            grid-area: it;
+        }
+        .twohundred-plus-solutions{
+            grid-area: solutions;
+        }
     }
     .business-partnerships{
-        width: 25em;
+        max-width: 25em;
         display: none;
         
     }
@@ -192,10 +214,7 @@ $checkboxColor:rgb(241, 241, 241);
                 font-size: 1.3rem;
             }
         }
-
     }
-   
-
 }
 @media only screen and (max-width: 600px){
     .business-partnerships > label{
@@ -208,9 +227,6 @@ $checkboxColor:rgb(241, 241, 241);
     .contact-sales, .login, .get-started-hamburger-button{
         display: none;
     }
-    
-
-
 }
 @media only screen and (max-width: 400px){
     .business-partnerships > label{
