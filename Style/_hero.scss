@@ -27,14 +27,14 @@ $checkboxColor:rgb(241, 241, 241);
 }
 
 .project-management{
-    display: flex;
-    flex-direction: row;
+   
     
     .pm-div{
+        display: inline-block;
         height: 0.5em;
         width: 0.5em;
         background-color: rgb(250, 250, 250);
-        margin: 0.15em 0.3em 0.15em 0.15em;
+        
         padding: 0.1em;
         border: 1px solid red;
         border-radius: 2px;
@@ -51,13 +51,13 @@ $checkboxColor:rgb(241, 241, 241);
     }
 }
 .marketing{
-    display: flex;
-    flex-direction: row;
+    
     .m-div{
+        display: inline-block;
         height: 0.5em;
         width: 0.5em;
         background-color: rgb(250, 250, 250);
-        margin: 0.15em 0.3em 0.15em 0.15em;
+        margin: 0;
         padding: 0.1em;
         border: 1px solid rgb(223, 145, 0);
         border-radius: 2px;
@@ -70,13 +70,13 @@ $checkboxColor:rgb(241, 241, 241);
     
 }
 .crm-and-sales{
-    display: flex;
-    flex-direction: row;
+    
     .cas-div{
+        display: inline-block;
         height: 0.5em;
         width: 0.5em;
         background-color: rgb(250, 250, 250);
-        margin: 0.15em 0.3em 0.15em 0.15em;
+        margin: 0em;
         padding: 0.1em;
         border: 1px solid rgba(0, 39, 214, 0.753);
         border-radius: 2px;
@@ -89,13 +89,13 @@ $checkboxColor:rgb(241, 241, 241);
 
 
 .creative-and-design{
-    display: flex;
-    flex-direction: row;
+    
     .cad-div{
+        display: inline-block;
         height: 0.5em;
         width: 0.5em;
         background-color: rgb(250, 250, 250);
-        margin: 0.15em 0.3em 0.15em 0.15em;
+        margin: 0em;
         padding: 0.1em;
         border: 1px solid rgba(0, 172, 14, 0.849);
         border-radius: 2px;
@@ -106,13 +106,13 @@ $checkboxColor:rgb(241, 241, 241);
     }
 }
 .software-development{
-    display: flex;
-    flex-direction: row;
+    
     .sd-div{
+        display: inline-block;
         height: 0.5em;
         width: 0.5em;
         background-color: rgb(250, 250, 250);
-        margin: 0.15em 0.3em 0.15em 0.15em;
+        margin: 0em;
         padding: 0.1em;
         border: 1px solid rgba(33, 66, 251, 0.849);
         border-radius: 2px;
@@ -124,13 +124,13 @@ $checkboxColor:rgb(241, 241, 241);
 
 }
 .task-management{
-    display: flex;
-    flex-direction: row;
+    
     .tm-div{
+        display: inline-block;
         height: 0.5em;
         width: 0.5em;
         background-color: rgb(250, 250, 250);
-        margin: 0.15em 0.3em 0.15em 0.15em;
+        margin: 0em;
         padding: 0.1em;
         border: 1px solid rgba(67, 0, 175, 0.849);
         border-radius: 2px;
@@ -141,13 +141,13 @@ $checkboxColor:rgb(241, 241, 241);
     }
 }
 .construction{
-    display: flex;
-    flex-direction: row;
+    
     .c-div{
+        display: inline-block;
         height: 0.5em;
         width: 0.5em;
         background-color: rgb(250, 250, 250);
-        margin: 0.15em 0.3em 0.15em 0.15em;
+        margin: 0em;
         padding: 0.1em;
         border: 1px solid rgba(2, 91, 233, 0.849);
         border-radius: 2px;
@@ -158,13 +158,13 @@ $checkboxColor:rgb(241, 241, 241);
     }
 }
 .hr-and-recruitment{
-    display: flex;
-    flex-direction: row;
+    
     .har-div{
+        display: inline-block;
         height: 0.5em;
         width: 0.5em;
         background-color: rgb(250, 250, 250);
-        margin: 0.15em 0.3em 0.15em 0.15em;
+        margin: 0em;
         padding: 0.1em;
         border: 1px solid rgba(255, 143, 39, 0.849);
         border-radius: 2px;
@@ -175,13 +175,13 @@ $checkboxColor:rgb(241, 241, 241);
     }
 }
 .it{
-    display: flex;
-    flex-direction: row;
+    
     .it-div{
+        display: inline-block;
         height: 0.5em;
         width: 0.5em;
         background-color: rgb(250, 250, 250);
-        margin: 0.15em 0.3em 0.15em 0.15em;
+        margin: 0em;
         padding: 0.1em;
         border: 1px solid rgba(21, 3, 180, 0.849);
         border-radius: 2px;
@@ -192,13 +192,13 @@ $checkboxColor:rgb(241, 241, 241);
     }
 }
 .twohundred-plus-solutions{
-    display: flex;
-    flex-direction: row;
+    
     .tps-div{
+        display: inline-block;
         height: 0.5em;
         width: 0.5em;
         background-color: rgb(250, 250, 250);
-        margin: 0.15em 0.3em 0.15em 0.15em;
+        margin: 0em;
         padding: 0.1em;
         border: 1px solid rgba(152, 199, 44, 0.849);
         border-radius: 2px;

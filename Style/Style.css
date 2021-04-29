@@ -10,21 +10,11 @@
   display: none;
 }
 
-.project-management {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
 .project-management .pm-div {
+  display: inline-block;
   height: 0.5em;
   width: 0.5em;
   background-color: #fafafa;
-  margin: 0.15em 0.3em 0.15em 0.15em;
   padding: 0.1em;
   border: 1px solid red;
   border-radius: 2px;
@@ -40,21 +30,12 @@
   display: none;
 }
 
-.marketing {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
 .marketing .m-div {
+  display: inline-block;
   height: 0.5em;
   width: 0.5em;
   background-color: #fafafa;
-  margin: 0.15em 0.3em 0.15em 0.15em;
+  margin: 0;
   padding: 0.1em;
   border: 1px solid #df9100;
   border-radius: 2px;
@@ -65,21 +46,12 @@
   margin: -0.15em 0 0 -0.2em;
 }
 
-.crm-and-sales {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
 .crm-and-sales .cas-div {
+  display: inline-block;
   height: 0.5em;
   width: 0.5em;
   background-color: #fafafa;
-  margin: 0.15em 0.3em 0.15em 0.15em;
+  margin: 0em;
   padding: 0.1em;
   border: 1px solid rgba(0, 39, 214, 0.753);
   border-radius: 2px;
@@ -90,21 +62,12 @@
   margin: -0.15em 0 0 -0.2em;
 }
 
-.creative-and-design {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
 .creative-and-design .cad-div {
+  display: inline-block;
   height: 0.5em;
   width: 0.5em;
   background-color: #fafafa;
-  margin: 0.15em 0.3em 0.15em 0.15em;
+  margin: 0em;
   padding: 0.1em;
   border: 1px solid rgba(0, 172, 14, 0.849);
   border-radius: 2px;
@@ -115,21 +78,12 @@
   margin: -0.15em 0 0 -0.2em;
 }
 
-.software-development {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
 .software-development .sd-div {
+  display: inline-block;
   height: 0.5em;
   width: 0.5em;
   background-color: #fafafa;
-  margin: 0.15em 0.3em 0.15em 0.15em;
+  margin: 0em;
   padding: 0.1em;
   border: 1px solid rgba(33, 66, 251, 0.849);
   border-radius: 2px;
@@ -140,21 +94,12 @@
   margin: -0.15em 0 0 -0.2em;
 }
 
-.task-management {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
 .task-management .tm-div {
+  display: inline-block;
   height: 0.5em;
   width: 0.5em;
   background-color: #fafafa;
-  margin: 0.15em 0.3em 0.15em 0.15em;
+  margin: 0em;
   padding: 0.1em;
   border: 1px solid rgba(67, 0, 175, 0.849);
   border-radius: 2px;
@@ -165,21 +110,12 @@
   margin: -0.15em 0 0 -0.2em;
 }
 
-.construction {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
 .construction .c-div {
+  display: inline-block;
   height: 0.5em;
   width: 0.5em;
   background-color: #fafafa;
-  margin: 0.15em 0.3em 0.15em 0.15em;
+  margin: 0em;
   padding: 0.1em;
   border: 1px solid rgba(2, 91, 233, 0.849);
   border-radius: 2px;
@@ -190,21 +126,12 @@
   margin: -0.15em 0 0 -0.2em;
 }
 
-.hr-and-recruitment {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
 .hr-and-recruitment .har-div {
+  display: inline-block;
   height: 0.5em;
   width: 0.5em;
   background-color: #fafafa;
-  margin: 0.15em 0.3em 0.15em 0.15em;
+  margin: 0em;
   padding: 0.1em;
   border: 1px solid rgba(255, 143, 39, 0.849);
   border-radius: 2px;
@@ -215,21 +142,12 @@
   margin: -0.15em 0 0 -0.2em;
 }
 
-.it {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
 .it .it-div {
+  display: inline-block;
   height: 0.5em;
   width: 0.5em;
   background-color: #fafafa;
-  margin: 0.15em 0.3em 0.15em 0.15em;
+  margin: 0em;
   padding: 0.1em;
   border: 1px solid rgba(21, 3, 180, 0.849);
   border-radius: 2px;
@@ -240,21 +158,12 @@
   margin: -0.15em 0 0 -0.2em;
 }
 
-.twohundred-plus-solutions {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
 .twohundred-plus-solutions .tps-div {
+  display: inline-block;
   height: 0.5em;
   width: 0.5em;
   background-color: #fafafa;
-  margin: 0.15em 0.3em 0.15em 0.15em;
+  margin: 0em;
   padding: 0.1em;
   border: 1px solid rgba(152, 199, 44, 0.849);
   border-radius: 2px;
