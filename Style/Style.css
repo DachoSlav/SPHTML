@@ -6,6 +6,12 @@
   margin: 0;
 }
 
+.addClass .project-management {
+  background-color: #9eafff;
+  -webkit-transform: scale(10);
+          transform: scale(10);
+}
+
 .fixed {
   position: fixed;
   right: 0;
@@ -96,8 +102,9 @@
 .sticky-nav-bar .hamburger .get-started-hamburger-button {
   margin: 0 1em 0 1em;
   background-color: #0d5855;
-  padding: 0.6em 0.7em;
+  padding: 0.6em 1em;
   border-radius: 5px;
+  border: none;
   color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-left: 2em;
@@ -141,6 +148,10 @@
   max-width: 60em;
 }
 
+.main-text-and-button .business-partnerships .project-management .project-management-checkbox {
+  color: blue;
+}
+
 .main-text-and-button .business-partnerships > label {
   padding: 0.5em 0.8em;
   background-color: #f1f1f1;
@@ -165,11 +176,12 @@
 .main-text-and-button .get-started-main-button {
   margin: 0 1em 0 1em;
   background-color: #0d5855;
-  padding: 0.6em 0.7em;
+  padding: 0.6em 1em;
   border-radius: 5px;
+  border: none;
   color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-top: 2em;
+  margin: 3em 0;
 }
 
 .main-text-and-button .get-started-main-button:hover {
@@ -185,17 +197,74 @@
 }
 
 @media only screen and (max-width: 700px) {
-  .business-partnerships > label {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    display: block;
-    width: 7em;
-    white-space: wrap;
-    padding: 0.2em 3em;
+  .business-partnerships {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "pm marketing crm" "creative creative creative soft soft soft" "task task constr constr hr hr" "it it it solutions solutions solutions";
+  }
+  .business-partnerships .project-management {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: pm;
+  }
+  .business-partnerships .marketing {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: marketing;
+  }
+  .business-partnerships .crm-and-sales {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: crm;
+  }
+  .business-partnerships .creative-and-design {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: creative;
+  }
+  .business-partnerships .software-development {
+    -ms-grid-row: 2;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 3;
+    grid-area: soft;
+  }
+  .business-partnerships .task-management {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: task;
+  }
+  .business-partnerships .construction {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-area: constr;
+  }
+  .business-partnerships .hr-and-recruitment {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2;
+    grid-area: hr;
+  }
+  .business-partnerships .it {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: it;
+  }
+  .business-partnerships .twohundred-plus-solutions {
+    -ms-grid-row: 4;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 3;
+    grid-area: solutions;
   }
   .business-partnerships {
-    width: 25em;
+    max-width: 25em;
     display: none;
   }
   .contact-sales, .login, .get-started-hamburger-button {
@@ -404,11 +473,11 @@
 
 .grid-container .messaging .messaging-photo {
   height: 4em;
-  margin-top: 1em;
+  margin-top: 0em;
 }
 
 .grid-container .messaging .msgn {
-  margin: 1em 0 0em 0em;
+  margin: 1em 0 1em 0em;
   font-weight: 700;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -996,11 +1065,11 @@
     margin: -1em 1em 1em 1em;
   }
   .feature-third .for {
-    margin: 0;
+    margin: 1em 0 0 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   .feature-third .hellow {
-    margin: 1em 0 5em 0;
+    margin: 1em 0 3em 0;
     max-width: 20em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5em;
@@ -1189,19 +1258,17 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .feature-second .feature-2 {
+  .feature-second .second-photo .feature-2 {
     position: absolute;
     top: 0;
-    z-index: -1;
-    padding: 0;
-    margin: 0;
+    left: 18vw;
   }
   .feature-second .grid-container-two {
     max-width: 100%;
     right: 0;
     left: 0;
     top: 30%;
-    margin: 1em;
+    margin: 5em 1em 1em 1em;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     -ms-grid-rows: 1fr 1fr 1fr 1fr;
@@ -1248,7 +1315,19 @@
   }
   .feature-third .feature-2 {
     position: absolute;
-    top: -3em;
+    top: -2em;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .second-photo .feature-2 {
+    margin-left: -2.5em;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .second-photo .feature-2 {
+    margin-left: -3em;
   }
 }
 
@@ -1610,8 +1689,7 @@
 .form {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   position: absolute;
-  top: 45%;
-  left: 45%;
+  top: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

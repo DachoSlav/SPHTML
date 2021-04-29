@@ -122,11 +122,10 @@
             }
             .messaging-photo{
                 height: 4em;
-                
-                margin-top: 1em;
+                margin-top: 0em;
             }
             .msgn{
-                margin: 1em 0 0em 0em;
+                margin: 1em 0 1em 0em;
                 font-weight: 700;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             }
@@ -559,8 +558,6 @@
         height: 18em;
         margin-top: -8em;
         right: 0;
-        
-        
     }
     
     .grid-container-two{
@@ -602,11 +599,11 @@
     
     
     .for{
-        margin: 0;
+        margin: 1em 0 0 0;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     .hellow{
-        margin: 1em 0 5em 0;
+        margin: 1em 0 3em 0;
         max-width: 20em;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         line-height: 1.5em;
@@ -785,6 +782,7 @@
         position: relative;
         padding-top: 15em;
         
+        
         .what{
             margin: 0.6em;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -795,19 +793,18 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.5em;
         }
-        .second-photo{
+        .second-photo{       
             display: flex;
             justify-content: center;
             
-        }
-        .feature-2{
+
+            .feature-2{
             position: absolute;
             top: 0;
-            z-index: -1;
-            padding: 0;
-            margin: 0;
+            left: 18vw;
             
             
+            }
         }
         
         .grid-container-two{
@@ -815,7 +812,7 @@
             right: 0;
             left: 0;
             top:30%;
-            margin: 1em;
+            margin: 5em 1em 1em 1em;
             grid-template-columns: 1fr ;
             grid-template-rows: 1fr 1fr 1fr 1fr;
             grid-template-areas: 
@@ -854,9 +851,24 @@
         }
         .feature-2{
             position: absolute;
-            top: -3em;
+            top: -2em;
         }
     }
     
 }
+@media only screen and (max-width: 450px){
+    .second-photo{
 
+        .feature-2{
+            margin-left: -2.5em;
+        }
+    }
+}
+@media only screen and (max-width: 400px){
+    .second-photo{
+
+        .feature-2{
+            margin-left: -3em;
+        }
+    }
+}

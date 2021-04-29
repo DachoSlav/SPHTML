@@ -69,35 +69,35 @@
         <h3 class="main-text-two">What kind of partnerhips are you looking for?</h3>
         
         <div class="business-partnerships">
-            <label class="project-management">
-                <input type="checkbox"  id="pm" class="checkbox clicked" > Project Management
+            <label class="project-management" for="pm">
+                <input type="checkbox"  id="pm" class="project-management-checkbox" > Project Management
             </label>
-            <label class="marketing">
-                <input type="checkbox" id="m" class="marketing clicked" > Marketing
+            <label class="marketing" for="m">
+                <input type="checkbox" id="m" class="marketing-checkbox" > Marketing
             </label>
-            <label class="crm-and-sales">
-                <input type="checkbox"  id="cas"class="crm-and-sales clicked" > CRM and Sales
+            <label class="crm-and-sales" for="cas">
+                <input type="checkbox"  id="cas"class="crm-and-sales-checkbox" > CRM and Sales
             </label>
-            <label class="creative-and-design">
-                <input type="checkbox"  id="cad" class="creative-and-design-checkbox clicked"> Creative and Design
+            <label class="creative-and-design" for="cad">
+                <input type="checkbox"  id="cad" class="creative-and-design-checkbox"> Creative and Design
             </label>
-            <label class="software-development">
-                <input type="checkbox"  id="sd"class="software-development-checkbox clicked" > Software Development
+            <label class="software-development" for="sd">
+                <input type="checkbox"  id="sd"class="software-development-checkbox" > Software Development
             </label>
-            <label class="task-management">
-                <input type="checkbox" id="tm" class="task-managment-checkbox clicked" > Task Management
+            <label class="task-management" for="tm">
+                <input type="checkbox" id="tm" class="task-managment-checkbox" > Task Management
             </label>
-            <label class="construction">
-                <input type="checkbox" id="c" class="construction-checkbox clicked" > Construction
+            <label class="construction" for="c">
+                <input type="checkbox" id="c" class="construction-checkbox" > Construction
             </label>
-            <label class="hr-and-recruitment">
-                <input type="checkbox"  id="har"class="hr-and-recruitment-checkbox clicked"> HR and Recruitment
+            <label class="hr-and-recruitment" for="har">
+                <input type="checkbox"  id="har"class="hr-and-recruitment-checkbox"> HR and Recruitment
             </label>
-            <label class="it">
-                <input type="checkbox" id="it" class="it-checkbox clicked" > IT
+            <label class="it" for="it">
+                <input type="checkbox" id="it" class="it-checkbox" > IT
             </label>    
-            <label class="twohundred-plus-solutions">
-                <input type="checkbox" id="tps" class="twohundred-plus-solutions-checkbox clicked" > 200+ Solutions
+            <label class="twohundred-plus-solutions" for="tps">
+                <input type="checkbox" id="tps" class="twohundred-plus-solutions-checkbox" > 200+ Solutions
             </label>
         </div>
        
@@ -352,10 +352,11 @@
         $(".cancel").click(function(){
             $(".form").toggle();
         })
+        
 
         $('#pm').click(function(){
             alert("checked")
-            document.getElementById(pm).className = addClass;
+            document.getElementsByClassName(project-management).className = addClass;
         });
     
         $(window).scroll(function(){
@@ -365,12 +366,7 @@
             $(".lines").addClass("fixed-3")
         })
 
-        var screenHeight = screen.height;
-        var screenWidth = screen.width;
-        console.log(screenHeight)
-
-
-        
+            
     
     })
     
