@@ -52,7 +52,7 @@
         <div class="image">
            <img src="/assets/logo.png" class="logo-image">
         </div>
-        
+            
         <div class="hamburger">
             <div class="contact-sales">Contact Sales</div>
             <div class="login" id="login-text">Login</div>
@@ -381,14 +381,15 @@
             
             var lightblue = "rgb(173, 173, 255)";
             var grayish = "rgb(241,241,241)";
-            var checkboxImage = "/assets"
+            var checkboxImage ;
             
             if(check==true){
                 $(this).css("background-color", lightblue);
+                $(".pm-div").css("background-image", url(checkboxImage))
                 
             }else{
                 $(this).css("background-color", grayish);
-                $(".pm-div").css("background-image", url("/assets"))
+                
             }
         })
         $(".marketing").change(function(){
