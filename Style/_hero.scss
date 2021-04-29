@@ -37,6 +37,16 @@ $checkboxColor:rgb(241, 241, 241);
         padding: 0.1em;
         border: 1px solid red;
         border-radius: 2px;
+        position: relative;
+
+    }
+    .pm-gc{
+        padding: 0;
+        margin: -0.15em 0 0 -0.15em;
+        position: absolute;
+        height: 120%;
+        width: 120%;
+        display: none;
     }
 }
 .marketing{
@@ -51,6 +61,12 @@ $checkboxColor:rgb(241, 241, 241);
         border: 1px solid rgb(223, 145, 0);
         border-radius: 2px;
     }
+    .m-gc{
+        display: none;
+        margin: -0.15em 0 0 -0.2em;
+    }
+    
+    
 }
 .crm-and-sales{
     display: flex;
@@ -64,20 +80,13 @@ $checkboxColor:rgb(241, 241, 241);
         border: 1px solid rgba(0, 39, 214, 0.753);
         border-radius: 2px;
     }
-}
-.crm-and-sales{
-    display: flex;
-    flex-direction: row;
-    .cas-div{
-        height: 0.5em;
-        width: 0.5em;
-        background-color: rgb(250, 250, 250);
-        margin: 0.15em 0.3em 0.15em 0.15em;
-        padding: 0.1em;
-        border: 1px solid rgba(0, 39, 214, 0.753);
-        border-radius: 2px;
+    .cas-gc{
+        display: none;
+        margin: -0.15em 0 0 -0.2em;
     }
 }
+
+
 .creative-and-design{
     display: flex;
     flex-direction: row;
@@ -89,6 +98,10 @@ $checkboxColor:rgb(241, 241, 241);
         padding: 0.1em;
         border: 1px solid rgba(0, 172, 14, 0.849);
         border-radius: 2px;
+    }
+    .cad-gc{
+        display: none;
+        margin: -0.15em 0 0 -0.2em;
     }
 }
 .software-development{
@@ -103,6 +116,11 @@ $checkboxColor:rgb(241, 241, 241);
         border: 1px solid rgba(33, 66, 251, 0.849);
         border-radius: 2px;
     }
+    .sd-gc{
+        display: none;
+        margin: -0.15em 0 0 -0.2em;
+    }
+
 }
 .task-management{
     display: flex;
@@ -115,6 +133,10 @@ $checkboxColor:rgb(241, 241, 241);
         padding: 0.1em;
         border: 1px solid rgba(67, 0, 175, 0.849);
         border-radius: 2px;
+    }
+    .tm-gc{
+        display: none;
+        margin: -0.15em 0 0 -0.2em;
     }
 }
 .construction{
@@ -129,6 +151,10 @@ $checkboxColor:rgb(241, 241, 241);
         border: 1px solid rgba(2, 91, 233, 0.849);
         border-radius: 2px;
     }
+    .c-gc{
+        display: none;
+        margin: -0.15em 0 0 -0.2em;
+    }
 }
 .hr-and-recruitment{
     display: flex;
@@ -141,6 +167,10 @@ $checkboxColor:rgb(241, 241, 241);
         padding: 0.1em;
         border: 1px solid rgba(255, 143, 39, 0.849);
         border-radius: 2px;
+    }
+    .har-gc{
+        display: none;
+        margin: -0.15em 0 0 -0.2em;
     }
 }
 .it{
@@ -155,6 +185,10 @@ $checkboxColor:rgb(241, 241, 241);
         border: 1px solid rgba(21, 3, 180, 0.849);
         border-radius: 2px;
     }
+    .it-gc{
+        display: none;
+        margin: -0.15em 0 0 -0.2em;
+    }
 }
 .twohundred-plus-solutions{
     display: flex;
@@ -167,6 +201,10 @@ $checkboxColor:rgb(241, 241, 241);
         padding: 0.1em;
         border: 1px solid rgba(152, 199, 44, 0.849);
         border-radius: 2px;
+    }
+    .tps-gc{
+        display: none;
+        margin: -0.15em 0 0 -0.2em;
     }
 }
 

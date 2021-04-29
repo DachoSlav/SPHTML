@@ -28,6 +28,16 @@
   padding: 0.1em;
   border: 1px solid red;
   border-radius: 2px;
+  position: relative;
+}
+
+.project-management .pm-gc {
+  padding: 0;
+  margin: -0.15em 0 0 -0.15em;
+  position: absolute;
+  height: 120%;
+  width: 120%;
+  display: none;
 }
 
 .marketing {
@@ -50,24 +60,9 @@
   border-radius: 2px;
 }
 
-.crm-and-sales {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.crm-and-sales .cas-div {
-  height: 0.5em;
-  width: 0.5em;
-  background-color: #fafafa;
-  margin: 0.15em 0.3em 0.15em 0.15em;
-  padding: 0.1em;
-  border: 1px solid rgba(0, 39, 214, 0.753);
-  border-radius: 2px;
+.marketing .m-gc {
+  display: none;
+  margin: -0.15em 0 0 -0.2em;
 }
 
 .crm-and-sales {
@@ -88,6 +83,11 @@
   padding: 0.1em;
   border: 1px solid rgba(0, 39, 214, 0.753);
   border-radius: 2px;
+}
+
+.crm-and-sales .cas-gc {
+  display: none;
+  margin: -0.15em 0 0 -0.2em;
 }
 
 .creative-and-design {
@@ -110,6 +110,11 @@
   border-radius: 2px;
 }
 
+.creative-and-design .cad-gc {
+  display: none;
+  margin: -0.15em 0 0 -0.2em;
+}
+
 .software-development {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -128,6 +133,11 @@
   padding: 0.1em;
   border: 1px solid rgba(33, 66, 251, 0.849);
   border-radius: 2px;
+}
+
+.software-development .sd-gc {
+  display: none;
+  margin: -0.15em 0 0 -0.2em;
 }
 
 .task-management {
@@ -150,6 +160,11 @@
   border-radius: 2px;
 }
 
+.task-management .tm-gc {
+  display: none;
+  margin: -0.15em 0 0 -0.2em;
+}
+
 .construction {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -168,6 +183,11 @@
   padding: 0.1em;
   border: 1px solid rgba(2, 91, 233, 0.849);
   border-radius: 2px;
+}
+
+.construction .c-gc {
+  display: none;
+  margin: -0.15em 0 0 -0.2em;
 }
 
 .hr-and-recruitment {
@@ -190,6 +210,11 @@
   border-radius: 2px;
 }
 
+.hr-and-recruitment .har-gc {
+  display: none;
+  margin: -0.15em 0 0 -0.2em;
+}
+
 .it {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -210,6 +235,11 @@
   border-radius: 2px;
 }
 
+.it .it-gc {
+  display: none;
+  margin: -0.15em 0 0 -0.2em;
+}
+
 .twohundred-plus-solutions {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -228,6 +258,11 @@
   padding: 0.1em;
   border: 1px solid rgba(152, 199, 44, 0.849);
   border-radius: 2px;
+}
+
+.twohundred-plus-solutions .tps-gc {
+  display: none;
+  margin: -0.15em 0 0 -0.2em;
 }
 
 .fixed {
