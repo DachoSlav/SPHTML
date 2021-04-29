@@ -22,12 +22,154 @@ $checkboxColor:rgb(241, 241, 241);
             cursor: pointer;
         }
 }
-.addClass{
-    .project-management{
-        background-color: rgb(158, 175, 255);
-        transform: scale(10);
+#pm, #cas,#m, #cad, #sd, #tm, #c, #har, #it, #tps{
+    display: none;
+}
+.project-management{
+    display: flex;
+    flex-direction: row;
+    .pm-div{
+        height: 0.5em;
+        width: 0.5em;
+        background-color: rgb(250, 250, 250);
+        margin: 0.15em 0.3em 0.15em 0.15em;
+        padding: 0.1em;
+        border: 1px solid red;
+        border-radius: 2px;
     }
 }
+.marketing{
+    display: flex;
+    flex-direction: row;
+    .m-div{
+        height: 0.5em;
+        width: 0.5em;
+        background-color: rgb(250, 250, 250);
+        margin: 0.15em 0.3em 0.15em 0.15em;
+        padding: 0.1em;
+        border: 1px solid rgb(223, 145, 0);
+        border-radius: 2px;
+    }
+}
+.crm-and-sales{
+    display: flex;
+    flex-direction: row;
+    .cas-div{
+        height: 0.5em;
+        width: 0.5em;
+        background-color: rgb(250, 250, 250);
+        margin: 0.15em 0.3em 0.15em 0.15em;
+        padding: 0.1em;
+        border: 1px solid rgba(0, 39, 214, 0.753);
+        border-radius: 2px;
+    }
+}
+.crm-and-sales{
+    display: flex;
+    flex-direction: row;
+    .cas-div{
+        height: 0.5em;
+        width: 0.5em;
+        background-color: rgb(250, 250, 250);
+        margin: 0.15em 0.3em 0.15em 0.15em;
+        padding: 0.1em;
+        border: 1px solid rgba(0, 39, 214, 0.753);
+        border-radius: 2px;
+    }
+}
+.creative-and-design{
+    display: flex;
+    flex-direction: row;
+    .cad-div{
+        height: 0.5em;
+        width: 0.5em;
+        background-color: rgb(250, 250, 250);
+        margin: 0.15em 0.3em 0.15em 0.15em;
+        padding: 0.1em;
+        border: 1px solid rgba(0, 172, 14, 0.849);
+        border-radius: 2px;
+    }
+}
+.software-development{
+    display: flex;
+    flex-direction: row;
+    .sd-div{
+        height: 0.5em;
+        width: 0.5em;
+        background-color: rgb(250, 250, 250);
+        margin: 0.15em 0.3em 0.15em 0.15em;
+        padding: 0.1em;
+        border: 1px solid rgba(33, 66, 251, 0.849);
+        border-radius: 2px;
+    }
+}
+.task-management{
+    display: flex;
+    flex-direction: row;
+    .tm-div{
+        height: 0.5em;
+        width: 0.5em;
+        background-color: rgb(250, 250, 250);
+        margin: 0.15em 0.3em 0.15em 0.15em;
+        padding: 0.1em;
+        border: 1px solid rgba(67, 0, 175, 0.849);
+        border-radius: 2px;
+    }
+}
+.construction{
+    display: flex;
+    flex-direction: row;
+    .c-div{
+        height: 0.5em;
+        width: 0.5em;
+        background-color: rgb(250, 250, 250);
+        margin: 0.15em 0.3em 0.15em 0.15em;
+        padding: 0.1em;
+        border: 1px solid rgba(2, 91, 233, 0.849);
+        border-radius: 2px;
+    }
+}
+.hr-and-recruitment{
+    display: flex;
+    flex-direction: row;
+    .har-div{
+        height: 0.5em;
+        width: 0.5em;
+        background-color: rgb(250, 250, 250);
+        margin: 0.15em 0.3em 0.15em 0.15em;
+        padding: 0.1em;
+        border: 1px solid rgba(255, 143, 39, 0.849);
+        border-radius: 2px;
+    }
+}
+.it{
+    display: flex;
+    flex-direction: row;
+    .it-div{
+        height: 0.5em;
+        width: 0.5em;
+        background-color: rgb(250, 250, 250);
+        margin: 0.15em 0.3em 0.15em 0.15em;
+        padding: 0.1em;
+        border: 1px solid rgba(21, 3, 180, 0.849);
+        border-radius: 2px;
+    }
+}
+.twohundred-plus-solutions{
+    display: flex;
+    flex-direction: row;
+    .tps-div{
+        height: 0.5em;
+        width: 0.5em;
+        background-color: rgb(250, 250, 250);
+        margin: 0.15em 0.3em 0.15em 0.15em;
+        padding: 0.1em;
+        border: 1px solid rgba(152, 199, 44, 0.849);
+        border-radius: 2px;
+    }
+}
+
+
 
 .fixed{
     position: fixed;
@@ -103,6 +245,7 @@ $checkboxColor:rgb(241, 241, 241);
 }
 
 }
+
 .main-text-and-button{
     display: flex;
     justify-content: center;
@@ -117,16 +260,16 @@ $checkboxColor:rgb(241, 241, 241);
         margin-top: 3em;
         justify-content: center;
         max-width: 60em;
-        .project-management{
-            .project-management-checkbox{
-                color: blue;
-            }
-        }
+        
     }
+    .pm-addClass{
+        background-color: blue
+    }
+    
     .business-partnerships > label{
         @include labelStyle();
         margin: 0.2em 0.3em;
-        
+       
     }
     .main-text{
         padding: 0.5em 1em;
@@ -167,6 +310,7 @@ $checkboxColor:rgb(241, 241, 241);
 
         .project-management{
             grid-area: pm;
+            
         }
         .marketing{
             grid-area: marketing;

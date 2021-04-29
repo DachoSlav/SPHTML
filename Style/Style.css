@@ -6,10 +6,228 @@
   margin: 0;
 }
 
-.addClass .project-management {
-  background-color: #9eafff;
-  -webkit-transform: scale(10);
-          transform: scale(10);
+#pm, #cas, #m, #cad, #sd, #tm, #c, #har, #it, #tps {
+  display: none;
+}
+
+.project-management {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.project-management .pm-div {
+  height: 0.5em;
+  width: 0.5em;
+  background-color: #fafafa;
+  margin: 0.15em 0.3em 0.15em 0.15em;
+  padding: 0.1em;
+  border: 1px solid red;
+  border-radius: 2px;
+}
+
+.marketing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.marketing .m-div {
+  height: 0.5em;
+  width: 0.5em;
+  background-color: #fafafa;
+  margin: 0.15em 0.3em 0.15em 0.15em;
+  padding: 0.1em;
+  border: 1px solid #df9100;
+  border-radius: 2px;
+}
+
+.crm-and-sales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.crm-and-sales .cas-div {
+  height: 0.5em;
+  width: 0.5em;
+  background-color: #fafafa;
+  margin: 0.15em 0.3em 0.15em 0.15em;
+  padding: 0.1em;
+  border: 1px solid rgba(0, 39, 214, 0.753);
+  border-radius: 2px;
+}
+
+.crm-and-sales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.crm-and-sales .cas-div {
+  height: 0.5em;
+  width: 0.5em;
+  background-color: #fafafa;
+  margin: 0.15em 0.3em 0.15em 0.15em;
+  padding: 0.1em;
+  border: 1px solid rgba(0, 39, 214, 0.753);
+  border-radius: 2px;
+}
+
+.creative-and-design {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.creative-and-design .cad-div {
+  height: 0.5em;
+  width: 0.5em;
+  background-color: #fafafa;
+  margin: 0.15em 0.3em 0.15em 0.15em;
+  padding: 0.1em;
+  border: 1px solid rgba(0, 172, 14, 0.849);
+  border-radius: 2px;
+}
+
+.software-development {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.software-development .sd-div {
+  height: 0.5em;
+  width: 0.5em;
+  background-color: #fafafa;
+  margin: 0.15em 0.3em 0.15em 0.15em;
+  padding: 0.1em;
+  border: 1px solid rgba(33, 66, 251, 0.849);
+  border-radius: 2px;
+}
+
+.task-management {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.task-management .tm-div {
+  height: 0.5em;
+  width: 0.5em;
+  background-color: #fafafa;
+  margin: 0.15em 0.3em 0.15em 0.15em;
+  padding: 0.1em;
+  border: 1px solid rgba(67, 0, 175, 0.849);
+  border-radius: 2px;
+}
+
+.construction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.construction .c-div {
+  height: 0.5em;
+  width: 0.5em;
+  background-color: #fafafa;
+  margin: 0.15em 0.3em 0.15em 0.15em;
+  padding: 0.1em;
+  border: 1px solid rgba(2, 91, 233, 0.849);
+  border-radius: 2px;
+}
+
+.hr-and-recruitment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.hr-and-recruitment .har-div {
+  height: 0.5em;
+  width: 0.5em;
+  background-color: #fafafa;
+  margin: 0.15em 0.3em 0.15em 0.15em;
+  padding: 0.1em;
+  border: 1px solid rgba(255, 143, 39, 0.849);
+  border-radius: 2px;
+}
+
+.it {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.it .it-div {
+  height: 0.5em;
+  width: 0.5em;
+  background-color: #fafafa;
+  margin: 0.15em 0.3em 0.15em 0.15em;
+  padding: 0.1em;
+  border: 1px solid rgba(21, 3, 180, 0.849);
+  border-radius: 2px;
+}
+
+.twohundred-plus-solutions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.twohundred-plus-solutions .tps-div {
+  height: 0.5em;
+  width: 0.5em;
+  background-color: #fafafa;
+  margin: 0.15em 0.3em 0.15em 0.15em;
+  padding: 0.1em;
+  border: 1px solid rgba(152, 199, 44, 0.849);
+  border-radius: 2px;
 }
 
 .fixed {
@@ -148,8 +366,8 @@
   max-width: 60em;
 }
 
-.main-text-and-button .business-partnerships .project-management .project-management-checkbox {
-  color: blue;
+.main-text-and-button .pm-addClass {
+  background-color: blue;
 }
 
 .main-text-and-button .business-partnerships > label {

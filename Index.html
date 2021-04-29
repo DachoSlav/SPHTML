@@ -69,34 +69,44 @@
         <h3 class="main-text-two">What kind of partnerhips are you looking for?</h3>
         
         <div class="business-partnerships">
-            <label class="project-management" for="pm">
+            <label class="project-management" for="pm" >
+                <div class="pm-div"></div>
                 <input type="checkbox"  id="pm" class="project-management-checkbox" > Project Management
             </label>
             <label class="marketing" for="m">
+                <div class="m-div"></div>
                 <input type="checkbox" id="m" class="marketing-checkbox" > Marketing
             </label>
             <label class="crm-and-sales" for="cas">
+                <div class="cas-div"></div>
                 <input type="checkbox"  id="cas"class="crm-and-sales-checkbox" > CRM and Sales
             </label>
             <label class="creative-and-design" for="cad">
+                <div class="cad-div"></div>
                 <input type="checkbox"  id="cad" class="creative-and-design-checkbox"> Creative and Design
             </label>
             <label class="software-development" for="sd">
+                <div class="sd-div"></div>
                 <input type="checkbox"  id="sd"class="software-development-checkbox" > Software Development
             </label>
             <label class="task-management" for="tm">
+                <div class="tm-div"></div>
                 <input type="checkbox" id="tm" class="task-managment-checkbox" > Task Management
             </label>
             <label class="construction" for="c">
+                <div class="c-div"></div>
                 <input type="checkbox" id="c" class="construction-checkbox" > Construction
             </label>
             <label class="hr-and-recruitment" for="har">
+                <div class="har-div"></div>
                 <input type="checkbox"  id="har"class="hr-and-recruitment-checkbox"> HR and Recruitment
             </label>
             <label class="it" for="it">
+                <div class="it-div"></div>
                 <input type="checkbox" id="it" class="it-checkbox" > IT
             </label>    
             <label class="twohundred-plus-solutions" for="tps">
+                <div class="tps-div"></div>
                 <input type="checkbox" id="tps" class="twohundred-plus-solutions-checkbox" > 200+ Solutions
             </label>
         </div>
@@ -355,7 +365,7 @@
         
 
         $('#pm').click(function(){
-            alert("checked")
+            
             document.getElementsByClassName(project-management).className = addClass;
         });
     
@@ -366,6 +376,130 @@
             $(".lines").addClass("fixed-3")
         })
 
+        $(".project-management").change(function(){
+            var check = document.getElementById("pm").checked;
+            
+            var lightblue = "rgb(173, 173, 255)";
+            var grayish = "rgb(241,241,241)";
+            var checkboxImage = "/assets"
+            
+            if(check==true){
+                $(this).css("background-color", lightblue);
+                
+            }else{
+                $(this).css("background-color", grayish);
+                $(".pm-div").css("background-image", url("/assets"))
+            }
+        })
+        $(".marketing").change(function(){
+            var check = document.getElementById("m").checked;
+            var lightblue = "rgb(173, 173, 255)";
+            var grayish = "rgb(241,241,241)";
+            
+            if(check==true){
+                $(this).css("background-color", lightblue);
+                $(".pm-div").addClass("pm-div-addClass");
+            }else{
+                $(this).css("background-color", grayish);
+                
+            }
+        })
+        $(".crm-and-sales").change(function(){
+            var check = document.getElementById("cas").checked;
+            
+            var lightblue = "rgb(173, 173, 255)";
+            var grayish = "rgb(241,241,241)";
+            
+            if(check==true){
+                $(this).css("background-color", lightblue);
+            }else{
+                $(this).css("background-color", grayish);
+            }
+        })
+        $(".creative-and-design").change(function(){
+            var check = document.getElementById("cad").checked;
+            
+            var lightblue = "rgb(173, 173, 255)";
+            var grayish = "rgb(241,241,241)";
+            
+            if(check==true){
+                $(this).css("background-color", lightblue);
+            }else{
+                $(this).css("background-color", grayish);
+            }
+        })
+        $(".software-development").change(function(){
+            var check = document.getElementById("sd").checked;
+            
+            var lightblue = "rgb(173, 173, 255)";
+            var grayish = "rgb(241,241,241)";
+            
+            if(check==true){
+                $(this).css("background-color", lightblue);
+            }else{
+                $(this).css("background-color", grayish);
+            }
+        })
+        $(".task-management").change(function(){
+            var check = document.getElementById("tm").checked;
+            
+            var lightblue = "rgb(173, 173, 255)";
+            var grayish = "rgb(241,241,241)";
+            
+            if(check==true){
+                $(this).css("background-color", lightblue);
+            }else{
+                $(this).css("background-color", grayish);
+            }
+        })
+        $(".construction").change(function(){
+            var check = document.getElementById("c").checked;
+            
+            var lightblue = "rgb(173, 173, 255)";
+            var grayish = "rgb(241,241,241)";
+            
+            if(check==true){
+                $(this).css("background-color", lightblue);
+            }else{
+                $(this).css("background-color", grayish);
+            }
+        })
+        $(".hr-and-recruitment").change(function(){
+            var check = document.getElementById("har").checked;
+            
+            var lightblue = "rgb(173, 173, 255)";
+            var grayish = "rgb(241,241,241)";
+            
+            if(check==true){
+                $(this).css("background-color", lightblue);
+            }else{
+                $(this).css("background-color", grayish);
+            }
+        })
+        $(".it").change(function(){
+            var check = document.getElementById("it").checked;
+            
+            var lightblue = "rgb(173, 173, 255)";
+            var grayish = "rgb(241,241,241)";
+            
+            if(check==true){
+                $(this).css("background-color", lightblue);
+            }else{
+                $(this).css("background-color", grayish);
+            }
+        })
+        $(".twohundred-plus-solutions").change(function(){
+            var check = document.getElementById("tps").checked;
+            
+            var lightblue = "rgb(173, 173, 255)";
+            var grayish = "rgb(241,241,241)";
+            
+            if(check==true){
+                $(this).css("background-color", lightblue);
+            }else{
+                $(this).css("background-color", grayish);
+            }
+        })
             
     
     })
