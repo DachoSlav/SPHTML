@@ -381,15 +381,17 @@
             
             var lightblue = "rgb(173, 173, 255)";
             var grayish = "rgb(241,241,241)";
+            var white = "rgb(241, 241, 241)";
             var checkboxImage ;
             
             if(check==true){
                 $(this).css("background-color", lightblue);
-                $(".pm-div").css("background-image", url(checkboxImage))
+                $(".pm-div").removeClass(".pm-div");
+                $(".pm-div").css("background-image", URL("/assets/green-checkbox"));
                 
             }else{
                 $(this).css("background-color", grayish);
-                
+                $(".pm-div").css("background-color", "white");
             }
         })
         $(".marketing").change(function(){
