@@ -348,33 +348,42 @@ $checkboxColor:rgb(241, 241, 241);
 
         .project-management{
             grid-area: pm;
-            
+            width: 25%;
         }
         .marketing{
             grid-area: marketing;
+            width: 25%;
         }
         .crm-and-sales{
+            width:25%;
             grid-area: crm;
         }
         .creative-and-design{
+            width: 40%;
             grid-area: creative;
         }
         .software-development{
+            width: 40%;
             grid-area: soft;
         }
         .task-management{
+            width: 25%;
             grid-area: task;
         }
         .construction{
+            width: 25%;
             grid-area: constr;
         }
         .hr-and-recruitment{
+            width: 25%;
             grid-area: hr;
         }
         .it{
+            width: 40%;
             grid-area: it;
         }
         .twohundred-plus-solutions{
+            width: 40%;
             grid-area: solutions;
         }
     }
@@ -405,22 +414,91 @@ $checkboxColor:rgb(241, 241, 241);
     }
     .business-partnerships{
         max-width: 25em;
+        padding: 0 2em;
+        .project-management{
+            width: 40%;
+        }
+        .marketing{
+            width: 40%;
+        }
+        .crm-and-sales{
+            width: 40%;
+        }
+        .creative-and-design{
+            width: 40%;
+        }
+        .software-development{
+            width: 40%;
+        }
+        .task-management{
+            width: 40%;
+        }
+        .construction{
+            width: 40%;
+        }
+        .hr-and-recruitment{
+            width: 40%;
+        }
+        .it{
+            width: 40%;
+        }
+        .twohundred-plus-solutions{
+            width: 40%;
+        }
     }
     .contact-sales, .login, .get-started-hamburger-button{
         display: none;
     }
+    
+}
+@media only screen and (max-width: 500px){
+    .business-partnerships{
+        padding: 2em;
+        .project-management{
+            width: 80%;
+        }
+        .marketing{
+            width: 20%;
+        }
+        .crm-and-sales{
+            width: 35%;
+        }
+        .creative-and-design{
+            width: 80%;
+        }
+        .software-development{
+            width: 80%;
+        }
+        .task-management{
+            width: 80%;
+        }
+        .construction{
+            width: 80%;
+        }
+        .hr-and-recruitment{
+            width: 40%;
+        }
+        .it{
+            width: 20%;
+        }
+        .twohundred-plus-solutions{
+            width: 40%;
+        }
+    }
+
+
 }
 @media only screen and (max-width: 400px){
-    .business-partnerships > label{
-        
-        flex-wrap: wrap;
-        width: 80%;
-        
-    }
+    
     .business-partnerships{
       
         flex-direction: column;
-        
+        .project-management, .marketing, .crm-and-sales, .creative-and-design, .software-development, .software-development, .task-management, .construction, .hr-and-recruitment
+        , .it, .twohundred-plus-solutions{
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
     }
     .contact-sales, .login, .get-started-hamburger-button{
         display: none;

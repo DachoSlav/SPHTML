@@ -368,54 +368,64 @@
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: pm;
+    width: 25%;
   }
   .business-partnerships .marketing {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: marketing;
+    width: 25%;
   }
   .business-partnerships .crm-and-sales {
+    width: 25%;
     -ms-grid-row: 1;
     -ms-grid-column: 3;
     grid-area: crm;
   }
   .business-partnerships .creative-and-design {
+    width: 40%;
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-area: creative;
   }
   .business-partnerships .software-development {
+    width: 40%;
     -ms-grid-row: 2;
     -ms-grid-column: 4;
     -ms-grid-column-span: 3;
     grid-area: soft;
   }
   .business-partnerships .task-management {
+    width: 25%;
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: task;
   }
   .business-partnerships .construction {
+    width: 25%;
     -ms-grid-row: 3;
     -ms-grid-column: 3;
     -ms-grid-column-span: 2;
     grid-area: constr;
   }
   .business-partnerships .hr-and-recruitment {
+    width: 25%;
     -ms-grid-row: 3;
     -ms-grid-column: 5;
     -ms-grid-column-span: 2;
     grid-area: hr;
   }
   .business-partnerships .it {
+    width: 40%;
     -ms-grid-row: 4;
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-area: it;
   }
   .business-partnerships .twohundred-plus-solutions {
+    width: 40%;
     -ms-grid-row: 4;
     -ms-grid-column: 4;
     -ms-grid-column-span: 3;
@@ -447,23 +457,91 @@
   }
   .business-partnerships {
     max-width: 25em;
+    padding: 0 2em;
+  }
+  .business-partnerships .project-management {
+    width: 40%;
+  }
+  .business-partnerships .marketing {
+    width: 40%;
+  }
+  .business-partnerships .crm-and-sales {
+    width: 40%;
+  }
+  .business-partnerships .creative-and-design {
+    width: 40%;
+  }
+  .business-partnerships .software-development {
+    width: 40%;
+  }
+  .business-partnerships .task-management {
+    width: 40%;
+  }
+  .business-partnerships .construction {
+    width: 40%;
+  }
+  .business-partnerships .hr-and-recruitment {
+    width: 40%;
+  }
+  .business-partnerships .it {
+    width: 40%;
+  }
+  .business-partnerships .twohundred-plus-solutions {
+    width: 40%;
   }
   .contact-sales, .login, .get-started-hamburger-button {
     display: none;
   }
 }
 
-@media only screen and (max-width: 400px) {
-  .business-partnerships > label {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+@media only screen and (max-width: 500px) {
+  .business-partnerships {
+    padding: 2em;
+  }
+  .business-partnerships .project-management {
     width: 80%;
   }
+  .business-partnerships .marketing {
+    width: 20%;
+  }
+  .business-partnerships .crm-and-sales {
+    width: 35%;
+  }
+  .business-partnerships .creative-and-design {
+    width: 80%;
+  }
+  .business-partnerships .software-development {
+    width: 80%;
+  }
+  .business-partnerships .task-management {
+    width: 80%;
+  }
+  .business-partnerships .construction {
+    width: 80%;
+  }
+  .business-partnerships .hr-and-recruitment {
+    width: 40%;
+  }
+  .business-partnerships .it {
+    width: 20%;
+  }
+  .business-partnerships .twohundred-plus-solutions {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
   .business-partnerships {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .business-partnerships .project-management, .business-partnerships .marketing, .business-partnerships .crm-and-sales, .business-partnerships .creative-and-design, .business-partnerships .software-development, .business-partnerships .software-development, .business-partnerships .task-management, .business-partnerships .construction, .business-partnerships .hr-and-recruitment
+, .business-partnerships .it, .business-partnerships .twohundred-plus-solutions {
+    width: 100%;
+    padding: 0;
+    margin: 0;
   }
   .contact-sales, .login, .get-started-hamburger-button {
     display: none;
@@ -1217,7 +1295,7 @@
   }
   .feature-third {
     position: relative;
-    height: 60em;
+    height: 42em;
     width: auto;
     padding: 0em 1em;
     margin: -1em 1em 1em 1em;
@@ -1339,6 +1417,9 @@
     margin: -3em 0 0 0;
     padding-right: 0em;
   }
+  .feature-third {
+    height: 43em;
+  }
   .feature-third .feature-2 {
     height: 15em;
     margin: -1em 0 0 0;
@@ -1459,6 +1540,7 @@
   .feature-third {
     position: relative;
     padding-top: 10em;
+    height: 45em;
   }
   .feature-third .hellow {
     max-width: 35em;
@@ -1473,7 +1555,7 @@
   }
   .feature-third .feature-2 {
     position: absolute;
-    top: -2em;
+    top: -1em;
   }
 }
 
@@ -1481,11 +1563,27 @@
   .second-photo .feature-2 {
     margin-left: -2.5em;
   }
+  .feature-second .grid-container-two {
+    margin-top: 7em;
+  }
+  .feature-third {
+    padding-top: 12em;
+  }
+  .feature-third .feature-2 {
+    top: 1em;
+  }
 }
 
 @media only screen and (max-width: 400px) {
   .second-photo .feature-2 {
     margin-left: -3em;
+  }
+  .feature-third {
+    padding-top: 12em;
+    padding-bottom: 2em;
+  }
+  .feature-third .feature-2 {
+    top: 1em;
   }
 }
 
@@ -1495,6 +1593,8 @@
 
 .h1-quote {
   opacity: 0.8;
+  padding: 0 0.5em;
+  text-align: center;
 }
 
 .flexed-pricing, .h1-quote {
@@ -1822,7 +1922,7 @@
   cursor: pointer;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 700px) {
   .flexed-pricing {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1844,6 +1944,15 @@
           justify-content: center;
 }
 
+#name {
+  margin-left: -0.4em;
+  padding-bottom: 0.5em;
+}
+
+#input-name {
+  margin-right: 0.2em;
+}
+
 .form {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   position: absolute;
@@ -1856,16 +1965,19 @@
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
-  height: 10em;
+  height: 14em;
   max-width: 15em;
   z-index: 1;
   background: #f3f3f3;
-  -webkit-box-shadow: 0px 0px 50px black;
-          box-shadow: 0px 0px 50px black;
-  border: 2px solid black;
-  border-radius: 10px;
-  padding: 1em 0.5em 0.5em 1em;
+  -webkit-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.527);
+          box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.527);
   display: none;
+  border-radius: 5px;
+  padding: 1em 0.5em 0.5em 1em;
+}
+
+.form .flexed-label {
+  margin-top: -2em;
 }
 
 .form .name {

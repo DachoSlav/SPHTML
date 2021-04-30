@@ -592,7 +592,7 @@
 }
 .feature-third{  
     position: relative;
-    height: 60em;
+    height: 42em;
     width: auto;
     padding: 0em 1em;
     margin: -1em 1em 1em 1em;
@@ -726,6 +726,7 @@
         }
     }
     .feature-third{
+        height: 43em;
         .feature-2{
             height: 15em;
             margin: -1em 0 0 0;;
@@ -842,6 +843,8 @@
     .feature-third{
         position: relative;
         padding-top: 10em;
+        height: 45em;
+        
         .hellow{
             max-width: 35em;
         }
@@ -851,8 +854,9 @@
         }
         .feature-2{
             position: absolute;
-            top: -2em;
+            top: -1em;
         }
+        
     }
     
 }
@@ -863,12 +867,33 @@
             margin-left: -2.5em;
         }
     }
+    .feature-second{
+        .grid-container-two{
+            margin-top: 7em;
+        }
+    }
+    .feature-third{
+        padding-top: 12em;
+        .feature-2{
+            top: 1em;
+        }
+    }
+    
+    
 }
 @media only screen and (max-width: 400px){
     .second-photo{
 
         .feature-2{
             margin-left: -3em;
+        }
+    }
+
+    .feature-third{
+        padding-top: 12em;
+        padding-bottom: 2em;
+        .feature-2{
+            top: 1em;
         }
     }
 }
