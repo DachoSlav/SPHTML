@@ -280,6 +280,33 @@
     }
 
 }
+
+.gray-arrow-photo{
+    height: 1.5em;
+    width: 1.5em;
+    position: absolute;
+    top: 4em;
+    right: 1em;
+    display: none;
+}
+.green-arrow-photo{
+    height: 1.5em;
+    width: 1.5em;
+    position: absolute;
+    top: 5em;
+    right: 1em;
+    display: none;
+}
+.black-arrow-photo{
+    height: 1.5em;
+    width: 1.5em;
+    position: absolute;
+    top: 5em;
+    right: 1em;
+    display: none;
+    transform: rotate(180deg)
+}
+
 @media only screen and (max-width: 700px){
 
     .flexed-pricing{
@@ -289,6 +316,48 @@
 }
 
 @media only screen and (max-width: 450px){
-   
+   .flexed-pricing{
+       .basic{
+           width: 100%;
+           padding: 1em;
+            ul{
+               display: none;
+           }
+           button{
+               display: none;
+           }
+           .gray-arrow-photo{
+               display: block;
+           }
+       }
+       .premium{
+            width: 100%;
+           padding: 1em 1em;
+           
+        ul{
+           display: none;
+       }
+       button{
+           display: none;
+        }
+        .green-arrow-photo{
+            display: block;
+        }
+       }
+
+       .business{
+        width: 100%;
+        padding: 1em;
+     ul{
+        display: none;
+    }
+    button{
+        display: none;
+     }
+        .black-arrow-photo{
+         display: block;
+        }
+    }
+   }
     
 }

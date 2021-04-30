@@ -252,12 +252,12 @@
         <h1 class="h1-quote">Which plan is right for you?</h1>
 
         <div class="flexed-pricing">
-            <div class="basic">
+            <div class="basic" >
                 <img src="/assets/price1.png" class="price1-photo">
                 <h3 class="basic-pricing">Basic</h3>
                 <h2 class="free-price">Free</h2>
                 <h4 class="make-great-friends">MAKE GREAT FRIENDS.</h4>
-                <ul>
+                <ul id="basic-ul">
                     <li>Sync up to 2 devices</li>
                     <li>Find notes fast with search and tags</li>
                     <li>Apply rich formatting to your notes</li>
@@ -266,9 +266,9 @@
                     <li>60MB monthly upload limit</li>
                 </ul>
                 <div class="flexed-button">
-                    <button class="free-button"> Get started</button>
+                    <button id="basic-button" class="free-button"> Get started</button>
                 </div>
-                
+                <div class="arrow-image" onclick="display()"><img src="/assets/gray-arrow.png" class="gray-arrow-photo" ></div>
             </div>
             
             <div class="premium">
@@ -281,7 +281,7 @@
                 </div>
                 <h2 class="premium-price"></h2>
                 <h4 class="be-more-popular">BE MORE POPULAR.</h4>
-                <ul>
+                <ul id="premium-ul">
                     <li>Everything in basic</li>
                     <li>Sync unlimited devices</li>
                     <li>Access notes offlice</li>
@@ -293,9 +293,9 @@
                     <li>10GB monthly upload limit</li>
                 </ul>
                 <div class="flexed-button">
-                    <button class="try-for-free-green-button">Try for free</button>
+                    <button class="try-for-free-green-button" id="premium-button">Try for free</button>
                 </div>
-               
+                <div id="premium-button" class="arrow-image"  onclick="display_two()"><img src="/assets/green-arrow.png" class="green-arrow-photo"></div>
             </div>
                     
             <div class="business">
@@ -309,7 +309,7 @@
                 </div>
                 <h2 class="business-price"></h2>
                 <h4 class="collaborate">COLLABORATE ACROSS YOUR COUNTRY.</h4>
-                <ul>
+                <ul id="business-ul">
                     <li>Everything in Premium</li>
                     <li>Work together in shared spaces</li>
                     <li>See your teams's activity history</li>
@@ -321,9 +321,9 @@
                    
                 </ul>
                 <div class="flexed-button">
-                    <button class="try-for-free-gray-button">Try for free</button>
+                    <button  id="business-button" class="try-for-free-gray-button">Try for free</button>
                 </div>
-                
+                <div class="arrow-image" onclick="display_three()"><img src="/assets/black-arrow.png" class="black-arrow-photo"></div>
             </div>
         </div>
     </div>
@@ -527,7 +527,8 @@
                 $(".tps-gc").css("display", "none");
             }
         })
-            
+       
+       
     
     })
     
